@@ -8,7 +8,7 @@ import {
   polygon,
   optimism,
   arbitrum,
-  base,
+  bsc,
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
@@ -21,7 +21,7 @@ const { chains, provider } = configureChains(
     polygon,
     optimism,
     arbitrum,
-    base,
+    bsc,
   ],
   [alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
 );
