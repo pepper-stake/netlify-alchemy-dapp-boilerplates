@@ -18,6 +18,5 @@ export default function Navbar() {
           <li>
             <Link href="/contacts" onClick={toggle}><p>Contacts</p></Link>
           </li>
-        </ul>
 	);
 }
