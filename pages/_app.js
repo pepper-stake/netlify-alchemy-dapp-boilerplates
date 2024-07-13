@@ -8,10 +8,6 @@ import {
   polygon,
   optimism,
   arbitrum,
-  goerli,
-  polygonMumbai,
-  optimismGoerli,
-  arbitrumGoerli,
 } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
@@ -21,13 +17,9 @@ import { useRouter } from "next/router";
 const { chains, provider } = configureChains(
   [
     mainnet,
-    goerli,
     polygon,
-    polygonMumbai,
     optimism,
-    optimismGoerli,
     arbitrum,
-    arbitrumGoerli,
   ],
   [alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }), publicProvider()]
 );
