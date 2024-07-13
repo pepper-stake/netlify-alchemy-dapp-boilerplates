@@ -8,7 +8,7 @@ export default function Navbar() {
 			</a>
 			<ConnectButton></ConnectButton>
 		</nav>
-		<ul className="sidebar-nav text-center leading-relaxed text-xl">
+		
           <li>
             <Link href="/about" onClick={toggle}><p>About Us</p></Link>
           </li>
